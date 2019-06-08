@@ -1,0 +1,985 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39B6676CA5675C3E67AC68FC /* Pods_DoctorHQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52885B3711E7065FCFF2039E /* Pods_DoctorHQ.framework */; };
+		4529F5D9229C408A001AE1D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529F5D8229C408A001AE1D7 /* AppDelegate.swift */; };
+		4529F5E0229C408B001AE1D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4529F5DF229C408B001AE1D7 /* Assets.xcassets */; };
+		4529F5F9229C408B001AE1D7 /* LemiTravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529F5F8229C408B001AE1D7 /* LemiTravelUITests.swift */; };
+		4529F60D229C4726001AE1D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4529F60C229C4726001AE1D7 /* LaunchScreen.xib */; };
+		4529F60F229C4783001AE1D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529F60E229C4783001AE1D7 /* HomeViewController.swift */; };
+		4529F613229C4799001AE1D7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529F612229C4799001AE1D7 /* BaseViewController.swift */; };
+		45461D92229CAF3900FB4DA6 /* ReachabilitySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D91229CAF3900FB4DA6 /* ReachabilitySwift.swift */; };
+		45461D94229CB02200FB4DA6 /* UIColor+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D93229CB02200FB4DA6 /* UIColor+LemiTravel.swift */; };
+		45461D96229CB17F00FB4DA6 /* UIView+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D95229CB17F00FB4DA6 /* UIView+LemiTravel.swift */; };
+		45461D98229CB1AB00FB4DA6 /* UILabel+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D97229CB1AB00FB4DA6 /* UILabel+LemiTravel.swift */; };
+		45461D9A229CB2A000FB4DA6 /* UIImageView+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D99229CB2A000FB4DA6 /* UIImageView+LemiTravel.swift */; };
+		45461D9C229CB38100FB4DA6 /* ConstraintMaker+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D9B229CB38100FB4DA6 /* ConstraintMaker+LemiTravel.swift */; };
+		45461D9E229D54CF00FB4DA6 /* UIButton+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D9D229D54CF00FB4DA6 /* UIButton+LemiTravel.swift */; };
+		45461DA0229D5BB500FB4DA6 /* UIImage+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D9F229D5BB500FB4DA6 /* UIImage+LemiTravel.swift */; };
+		45461DA3229D5E5700FB4DA6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DA2229D5E5700FB4DA6 /* HomeViewModel.swift */; };
+		45461DA7229D5FFE00FB4DA6 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DA6229D5FFE00FB4DA6 /* CityListViewController.swift */; };
+		45461DAA229D6A4C00FB4DA6 /* HomeViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DA9229D6A4C00FB4DA6 /* HomeViewModelSpec.swift */; };
+		45461DAD229D773400FB4DA6 /* UITableViewCell+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DAC229D773400FB4DA6 /* UITableViewCell+LemiTravel.swift */; };
+		45461DAF229D7A4100FB4DA6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DAE229D7A4100FB4DA6 /* City.swift */; };
+		45461DB2229D7CFD00FB4DA6 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DB1229D7CFD00FB4DA6 /* HomeTableViewCell.swift */; };
+		457FE536229E8155000D6C52 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE535229E8155000D6C52 /* CityTableViewCell.swift */; };
+		457FE538229E8A65000D6C52 /* CityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE537229E8A65000D6C52 /* CityListViewModel.swift */; };
+		457FE53A229E8BCA000D6C52 /* LTSharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE539229E8BCA000D6C52 /* LTSharedData.swift */; };
+		457FE53C229E8F08000D6C52 /* LTDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE53B229E8F08000D6C52 /* LTDefaults.swift */; };
+		457FE53E229EAE59000D6C52 /* CityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE53D229EAE59000D6C52 /* CityHelper.swift */; };
+		457FE541229EB30B000D6C52 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE540229EB30B000D6C52 /* BaseTableViewCell.swift */; };
+		457FE543229EBBBF000D6C52 /* String+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE542229EBBBF000D6C52 /* String+LemiTravel.swift */; };
+		457FE548229EC660000D6C52 /* Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 457FE547229EC660000D6C52 /* Cities.json */; };
+		457FE54B229EC6C8000D6C52 /* CoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE54A229EC6C8000D6C52 /* CoreService.swift */; };
+		457FE555229EC771000D6C52 /* JSONArrayEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE54E229EC771000D6C52 /* JSONArrayEncoding.swift */; };
+		457FE556229EC771000D6C52 /* NoBracketsEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE54F229EC771000D6C52 /* NoBracketsEncoding.swift */; };
+		457FE557229EC771000D6C52 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE551229EC771000D6C52 /* APIManager.swift */; };
+		457FE55A229EC771000D6C52 /* CustomServerTrustPoliceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE554229EC771000D6C52 /* CustomServerTrustPoliceManager.swift */; };
+		457FE55C229ECC5B000D6C52 /* APIManager+SearchCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE55B229ECC5B000D6C52 /* APIManager+SearchCalls.swift */; };
+		457FE55F229ECE57000D6C52 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE55E229ECE57000D6C52 /* SearchService.swift */; };
+		B4ED100C7880AFA4EDD67C5F /* Pods_DoctorHQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E6503826356C1C447AE5F5 /* Pods_DoctorHQTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4529F5EA229C408B001AE1D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4529F5CD229C408A001AE1D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4529F5D4229C408A001AE1D7;
+			remoteInfo = LemiTravel;
+		};
+		4529F5F5229C408B001AE1D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4529F5CD229C408A001AE1D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4529F5D4229C408A001AE1D7;
+			remoteInfo = LemiTravel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		170D703E6D82B2FA1E4AB2CD /* Pods-DoctorHQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorHQ.debug.xcconfig"; path = "Target Support Files/Pods-DoctorHQ/Pods-DoctorHQ.debug.xcconfig"; sourceTree = "<group>"; };
+		4529F5D5229C408A001AE1D7 /* DoctorHQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorHQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4529F5D8229C408A001AE1D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4529F5DF229C408B001AE1D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4529F5E4229C408B001AE1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4529F5E9229C408B001AE1D7 /* DoctorHQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoctorHQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4529F5EF229C408B001AE1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4529F5F4229C408B001AE1D7 /* DoctorHQUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoctorHQUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4529F5F8229C408B001AE1D7 /* LemiTravelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemiTravelUITests.swift; sourceTree = "<group>"; };
+		4529F5FA229C408B001AE1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4529F60C229C4726001AE1D7 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		4529F60E229C4783001AE1D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4529F612229C4799001AE1D7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		45461D91229CAF3900FB4DA6 /* ReachabilitySwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilitySwift.swift; sourceTree = "<group>"; };
+		45461D93229CB02200FB4DA6 /* UIColor+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+LemiTravel.swift"; sourceTree = "<group>"; };
+		45461D95229CB17F00FB4DA6 /* UIView+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LemiTravel.swift"; sourceTree = "<group>"; };
+		45461D97229CB1AB00FB4DA6 /* UILabel+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+LemiTravel.swift"; sourceTree = "<group>"; };
+		45461D99229CB2A000FB4DA6 /* UIImageView+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LemiTravel.swift"; sourceTree = "<group>"; };
+		45461D9B229CB38100FB4DA6 /* ConstraintMaker+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintMaker+LemiTravel.swift"; sourceTree = "<group>"; };
+		45461D9D229D54CF00FB4DA6 /* UIButton+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+LemiTravel.swift"; sourceTree = "<group>"; };
+		45461D9F229D5BB500FB4DA6 /* UIImage+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+LemiTravel.swift"; sourceTree = "<group>"; };
+		45461DA2229D5E5700FB4DA6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		45461DA6229D5FFE00FB4DA6 /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
+		45461DA8229D6A4C00FB4DA6 /* LemiTravelTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LemiTravelTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		45461DA9229D6A4C00FB4DA6 /* HomeViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelSpec.swift; sourceTree = "<group>"; };
+		45461DAC229D773400FB4DA6 /* UITableViewCell+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+LemiTravel.swift"; sourceTree = "<group>"; };
+		45461DAE229D7A4100FB4DA6 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		45461DB1229D7CFD00FB4DA6 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		457FE535229E8155000D6C52 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		457FE537229E8A65000D6C52 /* CityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewModel.swift; sourceTree = "<group>"; };
+		457FE539229E8BCA000D6C52 /* LTSharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTSharedData.swift; sourceTree = "<group>"; };
+		457FE53B229E8F08000D6C52 /* LTDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTDefaults.swift; sourceTree = "<group>"; };
+		457FE53D229EAE59000D6C52 /* CityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityHelper.swift; sourceTree = "<group>"; };
+		457FE540229EB30B000D6C52 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		457FE542229EBBBF000D6C52 /* String+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LemiTravel.swift"; sourceTree = "<group>"; };
+		457FE547229EC660000D6C52 /* Cities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cities.json; sourceTree = "<group>"; };
+		457FE54A229EC6C8000D6C52 /* CoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreService.swift; sourceTree = "<group>"; };
+		457FE54E229EC771000D6C52 /* JSONArrayEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONArrayEncoding.swift; sourceTree = "<group>"; };
+		457FE54F229EC771000D6C52 /* NoBracketsEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoBracketsEncoding.swift; sourceTree = "<group>"; };
+		457FE551229EC771000D6C52 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		457FE554229EC771000D6C52 /* CustomServerTrustPoliceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomServerTrustPoliceManager.swift; sourceTree = "<group>"; };
+		457FE55B229ECC5B000D6C52 /* APIManager+SearchCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager+SearchCalls.swift"; sourceTree = "<group>"; };
+		457FE55E229ECE57000D6C52 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		52885B3711E7065FCFF2039E /* Pods_DoctorHQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorHQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61BB5222883EA3141D92A5FF /* Pods-DoctorHQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorHQ.release.xcconfig"; path = "Target Support Files/Pods-DoctorHQ/Pods-DoctorHQ.release.xcconfig"; sourceTree = "<group>"; };
+		6A93663A1E8345936B72D6FF /* Pods-LemiTravelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemiTravelTests.release.xcconfig"; path = "Target Support Files/Pods-LemiTravelTests/Pods-LemiTravelTests.release.xcconfig"; sourceTree = "<group>"; };
+		8955768760AA05C9357A52F5 /* Pods-DoctorHQTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorHQTests.debug.xcconfig"; path = "Target Support Files/Pods-DoctorHQTests/Pods-DoctorHQTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9E6503826356C1C447AE5F5 /* Pods_DoctorHQTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorHQTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B48B09DC9888DF50A1333A7D /* Pods-LemiTravelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemiTravelTests.debug.xcconfig"; path = "Target Support Files/Pods-LemiTravelTests/Pods-LemiTravelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD49B06FDAAAED2B4213EFC0 /* Pods-DoctorHQTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorHQTests.release.xcconfig"; path = "Target Support Files/Pods-DoctorHQTests/Pods-DoctorHQTests.release.xcconfig"; sourceTree = "<group>"; };
+		DEDACB9A50BF4860395568BA /* Pods-LemiTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemiTravel.release.xcconfig"; path = "Target Support Files/Pods-LemiTravel/Pods-LemiTravel.release.xcconfig"; sourceTree = "<group>"; };
+		FED52DF604D9114644201CB4 /* Pods-LemiTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemiTravel.debug.xcconfig"; path = "Target Support Files/Pods-LemiTravel/Pods-LemiTravel.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4529F5D2229C408A001AE1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B6676CA5675C3E67AC68FC /* Pods_DoctorHQ.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4529F5E6229C408B001AE1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4ED100C7880AFA4EDD67C5F /* Pods_DoctorHQTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4529F5F1229C408B001AE1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09DE5B3B24F03CCA9F87591B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FED52DF604D9114644201CB4 /* Pods-LemiTravel.debug.xcconfig */,
+				DEDACB9A50BF4860395568BA /* Pods-LemiTravel.release.xcconfig */,
+				B48B09DC9888DF50A1333A7D /* Pods-LemiTravelTests.debug.xcconfig */,
+				6A93663A1E8345936B72D6FF /* Pods-LemiTravelTests.release.xcconfig */,
+				170D703E6D82B2FA1E4AB2CD /* Pods-DoctorHQ.debug.xcconfig */,
+				61BB5222883EA3141D92A5FF /* Pods-DoctorHQ.release.xcconfig */,
+				8955768760AA05C9357A52F5 /* Pods-DoctorHQTests.debug.xcconfig */,
+				CD49B06FDAAAED2B4213EFC0 /* Pods-DoctorHQTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4529F5CC229C408A001AE1D7 = {
+			isa = PBXGroup;
+			children = (
+				4529F5D7229C408A001AE1D7 /* DoctorHQ */,
+				4529F5EC229C408B001AE1D7 /* DoctorHQTests */,
+				4529F5F7229C408B001AE1D7 /* DoctorHQUITests */,
+				4529F5D6229C408A001AE1D7 /* Products */,
+				09DE5B3B24F03CCA9F87591B /* Pods */,
+				C9CFD247150046D068F50B70 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4529F5D6229C408A001AE1D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4529F5D5229C408A001AE1D7 /* DoctorHQ.app */,
+				4529F5E9229C408B001AE1D7 /* DoctorHQTests.xctest */,
+				4529F5F4229C408B001AE1D7 /* DoctorHQUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4529F5D7229C408A001AE1D7 /* DoctorHQ */ = {
+			isa = PBXGroup;
+			children = (
+				4529F60B229C4636001AE1D7 /* Networking */,
+				4529F608229C461A001AE1D7 /* Model */,
+				4529F609229C461F001AE1D7 /* View */,
+				4529F60A229C462C001AE1D7 /* ViewModel */,
+				4529F606229C45F2001AE1D7 /* Utilities */,
+				4529F607229C45F8001AE1D7 /* SupportingFiles */,
+			);
+			path = DoctorHQ;
+			sourceTree = "<group>";
+		};
+		4529F5EC229C408B001AE1D7 /* DoctorHQTests */ = {
+			isa = PBXGroup;
+			children = (
+				4529F5EF229C408B001AE1D7 /* Info.plist */,
+				45461DA9229D6A4C00FB4DA6 /* HomeViewModelSpec.swift */,
+				45461DA8229D6A4C00FB4DA6 /* LemiTravelTests-Bridging-Header.h */,
+			);
+			path = DoctorHQTests;
+			sourceTree = "<group>";
+		};
+		4529F5F7229C408B001AE1D7 /* DoctorHQUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4529F5F8229C408B001AE1D7 /* LemiTravelUITests.swift */,
+				4529F5FA229C408B001AE1D7 /* Info.plist */,
+			);
+			path = DoctorHQUITests;
+			sourceTree = "<group>";
+		};
+		4529F606229C45F2001AE1D7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				45461D90229CAF1C00FB4DA6 /* ReachabilitySwift */,
+				45461D9B229CB38100FB4DA6 /* ConstraintMaker+LemiTravel.swift */,
+				457FE542229EBBBF000D6C52 /* String+LemiTravel.swift */,
+				45461D9D229D54CF00FB4DA6 /* UIButton+LemiTravel.swift */,
+				45461D93229CB02200FB4DA6 /* UIColor+LemiTravel.swift */,
+				45461D95229CB17F00FB4DA6 /* UIView+LemiTravel.swift */,
+				45461D97229CB1AB00FB4DA6 /* UILabel+LemiTravel.swift */,
+				45461D99229CB2A000FB4DA6 /* UIImageView+LemiTravel.swift */,
+				45461D9F229D5BB500FB4DA6 /* UIImage+LemiTravel.swift */,
+				45461DAC229D773400FB4DA6 /* UITableViewCell+LemiTravel.swift */,
+				457FE539229E8BCA000D6C52 /* LTSharedData.swift */,
+				457FE53B229E8F08000D6C52 /* LTDefaults.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4529F607229C45F8001AE1D7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4529F5D8229C408A001AE1D7 /* AppDelegate.swift */,
+				4529F5DF229C408B001AE1D7 /* Assets.xcassets */,
+				4529F5E4229C408B001AE1D7 /* Info.plist */,
+				4529F60C229C4726001AE1D7 /* LaunchScreen.xib */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		4529F608229C461A001AE1D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45461DAE229D7A4100FB4DA6 /* City.swift */,
+				457FE53D229EAE59000D6C52 /* CityHelper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4529F609229C461F001AE1D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4529F610229C4786001AE1D7 /* Base */,
+				4529F611229C478A001AE1D7 /* Home */,
+				45461DA5229D5FD200FB4DA6 /* CityList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4529F60A229C462C001AE1D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				45461DA4229D5FC700FB4DA6 /* CityList */,
+				45461DA1229D5E4600FB4DA6 /* Home */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4529F60B229C4636001AE1D7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				457FE549229EC6B4000D6C52 /* Core */,
+				457FE55D229ECE4B000D6C52 /* Search */,
+				457FE546229EC646000D6C52 /* StubbedResponses */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4529F610229C4786001AE1D7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				457FE53F229EB2F6000D6C52 /* Cells */,
+				4529F612229C4799001AE1D7 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4529F611229C478A001AE1D7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				45461DB0229D7CEC00FB4DA6 /* Cells */,
+				4529F60E229C4783001AE1D7 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		45461D90229CAF1C00FB4DA6 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				45461D91229CAF3900FB4DA6 /* ReachabilitySwift.swift */,
+			);
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		45461DA1229D5E4600FB4DA6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				45461DA2229D5E5700FB4DA6 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		45461DA4229D5FC700FB4DA6 /* CityList */ = {
+			isa = PBXGroup;
+			children = (
+				457FE537229E8A65000D6C52 /* CityListViewModel.swift */,
+			);
+			path = CityList;
+			sourceTree = "<group>";
+		};
+		45461DA5229D5FD200FB4DA6 /* CityList */ = {
+			isa = PBXGroup;
+			children = (
+				457FE534229E8114000D6C52 /* Cells */,
+				45461DA6229D5FFE00FB4DA6 /* CityListViewController.swift */,
+			);
+			path = CityList;
+			sourceTree = "<group>";
+		};
+		45461DB0229D7CEC00FB4DA6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				45461DB1229D7CFD00FB4DA6 /* HomeTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		457FE534229E8114000D6C52 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				457FE535229E8155000D6C52 /* CityTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		457FE53F229EB2F6000D6C52 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				457FE540229EB30B000D6C52 /* BaseTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		457FE546229EC646000D6C52 /* StubbedResponses */ = {
+			isa = PBXGroup;
+			children = (
+				457FE547229EC660000D6C52 /* Cities.json */,
+			);
+			path = StubbedResponses;
+			sourceTree = "<group>";
+		};
+		457FE549229EC6B4000D6C52 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				457FE54A229EC6C8000D6C52 /* CoreService.swift */,
+				457FE550229EC771000D6C52 /* APIManagers */,
+				457FE54D229EC771000D6C52 /* CustomEncoders */,
+				457FE554229EC771000D6C52 /* CustomServerTrustPoliceManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		457FE54D229EC771000D6C52 /* CustomEncoders */ = {
+			isa = PBXGroup;
+			children = (
+				457FE54E229EC771000D6C52 /* JSONArrayEncoding.swift */,
+				457FE54F229EC771000D6C52 /* NoBracketsEncoding.swift */,
+			);
+			path = CustomEncoders;
+			sourceTree = "<group>";
+		};
+		457FE550229EC771000D6C52 /* APIManagers */ = {
+			isa = PBXGroup;
+			children = (
+				457FE551229EC771000D6C52 /* APIManager.swift */,
+				457FE55B229ECC5B000D6C52 /* APIManager+SearchCalls.swift */,
+			);
+			path = APIManagers;
+			sourceTree = "<group>";
+		};
+		457FE55D229ECE4B000D6C52 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				457FE55E229ECE57000D6C52 /* SearchService.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C9CFD247150046D068F50B70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52885B3711E7065FCFF2039E /* Pods_DoctorHQ.framework */,
+				A9E6503826356C1C447AE5F5 /* Pods_DoctorHQTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4529F5D4229C408A001AE1D7 /* DoctorHQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4529F5FD229C408B001AE1D7 /* Build configuration list for PBXNativeTarget "DoctorHQ" */;
+			buildPhases = (
+				CF7612C2E55EF4E51A82AFDD /* [CP] Check Pods Manifest.lock */,
+				4529F5D1229C408A001AE1D7 /* Sources */,
+				4529F5D2229C408A001AE1D7 /* Frameworks */,
+				4529F5D3229C408A001AE1D7 /* Resources */,
+				9E3E2BA29731225A9C3CDFC2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoctorHQ;
+			productName = LemiTravel;
+			productReference = 4529F5D5229C408A001AE1D7 /* DoctorHQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4529F5E8229C408B001AE1D7 /* DoctorHQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4529F600229C408B001AE1D7 /* Build configuration list for PBXNativeTarget "DoctorHQTests" */;
+			buildPhases = (
+				65782B1A6676D5FEA9E2EE9D /* [CP] Check Pods Manifest.lock */,
+				4529F5E5229C408B001AE1D7 /* Sources */,
+				4529F5E6229C408B001AE1D7 /* Frameworks */,
+				4529F5E7229C408B001AE1D7 /* Resources */,
+				C87DF25A8BB3F4D163477590 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4529F5EB229C408B001AE1D7 /* PBXTargetDependency */,
+			);
+			name = DoctorHQTests;
+			productName = LemiTravelTests;
+			productReference = 4529F5E9229C408B001AE1D7 /* DoctorHQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4529F5F3229C408B001AE1D7 /* DoctorHQUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4529F603229C408B001AE1D7 /* Build configuration list for PBXNativeTarget "DoctorHQUITests" */;
+			buildPhases = (
+				4529F5F0229C408B001AE1D7 /* Sources */,
+				4529F5F1229C408B001AE1D7 /* Frameworks */,
+				4529F5F2229C408B001AE1D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4529F5F6229C408B001AE1D7 /* PBXTargetDependency */,
+			);
+			name = DoctorHQUITests;
+			productName = LemiTravelUITests;
+			productReference = 4529F5F4229C408B001AE1D7 /* DoctorHQUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4529F5CD229C408A001AE1D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Glenn Von C. Posadas";
+				TargetAttributes = {
+					4529F5D4229C408A001AE1D7 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					4529F5E8229C408B001AE1D7 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+						TestTargetID = 4529F5D4229C408A001AE1D7;
+					};
+					4529F5F3229C408B001AE1D7 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 4529F5D4229C408A001AE1D7;
+					};
+				};
+			};
+			buildConfigurationList = 4529F5D0229C408A001AE1D7 /* Build configuration list for PBXProject "DoctorHQ" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4529F5CC229C408A001AE1D7;
+			productRefGroup = 4529F5D6229C408A001AE1D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4529F5D4229C408A001AE1D7 /* DoctorHQ */,
+				4529F5E8229C408B001AE1D7 /* DoctorHQTests */,
+				4529F5F3229C408B001AE1D7 /* DoctorHQUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4529F5D3229C408A001AE1D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457FE548229EC660000D6C52 /* Cities.json in Resources */,
+				4529F60D229C4726001AE1D7 /* LaunchScreen.xib in Resources */,
+				4529F5E0229C408B001AE1D7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4529F5E7229C408B001AE1D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4529F5F2229C408B001AE1D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65782B1A6676D5FEA9E2EE9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoctorHQTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E3E2BA29731225A9C3CDFC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoctorHQ/Pods-DoctorHQ-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoctorHQ/Pods-DoctorHQ-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DoctorHQ/Pods-DoctorHQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C87DF25A8BB3F4D163477590 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoctorHQTests/Pods-DoctorHQTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoctorHQTests/Pods-DoctorHQTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DoctorHQTests/Pods-DoctorHQTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF7612C2E55EF4E51A82AFDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoctorHQ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4529F5D1229C408A001AE1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45461D92229CAF3900FB4DA6 /* ReachabilitySwift.swift in Sources */,
+				457FE55C229ECC5B000D6C52 /* APIManager+SearchCalls.swift in Sources */,
+				4529F5D9229C408A001AE1D7 /* AppDelegate.swift in Sources */,
+				457FE536229E8155000D6C52 /* CityTableViewCell.swift in Sources */,
+				457FE557229EC771000D6C52 /* APIManager.swift in Sources */,
+				457FE538229E8A65000D6C52 /* CityListViewModel.swift in Sources */,
+				4529F60F229C4783001AE1D7 /* HomeViewController.swift in Sources */,
+				457FE555229EC771000D6C52 /* JSONArrayEncoding.swift in Sources */,
+				457FE543229EBBBF000D6C52 /* String+LemiTravel.swift in Sources */,
+				45461DA0229D5BB500FB4DA6 /* UIImage+LemiTravel.swift in Sources */,
+				45461D9A229CB2A000FB4DA6 /* UIImageView+LemiTravel.swift in Sources */,
+				45461D98229CB1AB00FB4DA6 /* UILabel+LemiTravel.swift in Sources */,
+				457FE556229EC771000D6C52 /* NoBracketsEncoding.swift in Sources */,
+				45461D96229CB17F00FB4DA6 /* UIView+LemiTravel.swift in Sources */,
+				45461DA3229D5E5700FB4DA6 /* HomeViewModel.swift in Sources */,
+				45461DAD229D773400FB4DA6 /* UITableViewCell+LemiTravel.swift in Sources */,
+				457FE53E229EAE59000D6C52 /* CityHelper.swift in Sources */,
+				457FE53C229E8F08000D6C52 /* LTDefaults.swift in Sources */,
+				457FE54B229EC6C8000D6C52 /* CoreService.swift in Sources */,
+				457FE55A229EC771000D6C52 /* CustomServerTrustPoliceManager.swift in Sources */,
+				45461D94229CB02200FB4DA6 /* UIColor+LemiTravel.swift in Sources */,
+				45461DA7229D5FFE00FB4DA6 /* CityListViewController.swift in Sources */,
+				457FE53A229E8BCA000D6C52 /* LTSharedData.swift in Sources */,
+				457FE541229EB30B000D6C52 /* BaseTableViewCell.swift in Sources */,
+				45461DAF229D7A4100FB4DA6 /* City.swift in Sources */,
+				45461D9C229CB38100FB4DA6 /* ConstraintMaker+LemiTravel.swift in Sources */,
+				4529F613229C4799001AE1D7 /* BaseViewController.swift in Sources */,
+				457FE55F229ECE57000D6C52 /* SearchService.swift in Sources */,
+				45461DB2229D7CFD00FB4DA6 /* HomeTableViewCell.swift in Sources */,
+				45461D9E229D54CF00FB4DA6 /* UIButton+LemiTravel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4529F5E5229C408B001AE1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45461DAA229D6A4C00FB4DA6 /* HomeViewModelSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4529F5F0229C408B001AE1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4529F5F9229C408B001AE1D7 /* LemiTravelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4529F5EB229C408B001AE1D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4529F5D4229C408A001AE1D7 /* DoctorHQ */;
+			targetProxy = 4529F5EA229C408B001AE1D7 /* PBXContainerItemProxy */;
+		};
+		4529F5F6229C408B001AE1D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4529F5D4229C408A001AE1D7 /* DoctorHQ */;
+			targetProxy = 4529F5F5229C408B001AE1D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4529F5FB229C408B001AE1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4529F5FC229C408B001AE1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4529F5FE229C408B001AE1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 170D703E6D82B2FA1E4AB2CD /* Pods-DoctorHQ.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29WJG67KYT;
+				INFOPLIST_FILE = "$(SRCROOT)/DoctorHQ/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.doctorhq;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4529F5FF229C408B001AE1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61BB5222883EA3141D92A5FF /* Pods-DoctorHQ.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29WJG67KYT;
+				INFOPLIST_FILE = "$(SRCROOT)/DoctorHQ/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.doctorhq;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4529F601229C408B001AE1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8955768760AA05C9357A52F5 /* Pods-DoctorHQTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RE4YFXSB23;
+				INFOPLIST_FILE = LemiTravelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.LemiTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LemiTravelTests/LemiTravelTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoctorHQ.app/DoctorHQ";
+			};
+			name = Debug;
+		};
+		4529F602229C408B001AE1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD49B06FDAAAED2B4213EFC0 /* Pods-DoctorHQTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RE4YFXSB23;
+				INFOPLIST_FILE = LemiTravelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.LemiTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LemiTravelTests/LemiTravelTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoctorHQ.app/DoctorHQ";
+			};
+			name = Release;
+		};
+		4529F604229C408B001AE1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RE4YFXSB23;
+				INFOPLIST_FILE = LemiTravelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.LemiTravelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LemiTravel;
+			};
+			name = Debug;
+		};
+		4529F605229C408B001AE1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RE4YFXSB23;
+				INFOPLIST_FILE = LemiTravelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.LemiTravelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LemiTravel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4529F5D0229C408A001AE1D7 /* Build configuration list for PBXProject "DoctorHQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4529F5FB229C408B001AE1D7 /* Debug */,
+				4529F5FC229C408B001AE1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4529F5FD229C408B001AE1D7 /* Build configuration list for PBXNativeTarget "DoctorHQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4529F5FE229C408B001AE1D7 /* Debug */,
+				4529F5FF229C408B001AE1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4529F600229C408B001AE1D7 /* Build configuration list for PBXNativeTarget "DoctorHQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4529F601229C408B001AE1D7 /* Debug */,
+				4529F602229C408B001AE1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4529F603229C408B001AE1D7 /* Build configuration list for PBXNativeTarget "DoctorHQUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4529F604229C408B001AE1D7 /* Debug */,
+				4529F605229C408B001AE1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4529F5CD229C408A001AE1D7 /* Project object */;
+}
