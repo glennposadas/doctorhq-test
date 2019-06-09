@@ -18,24 +18,22 @@
 		45461D94229CB02200FB4DA6 /* UIColor+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D93229CB02200FB4DA6 /* UIColor+LemiTravel.swift */; };
 		45461D96229CB17F00FB4DA6 /* UIView+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D95229CB17F00FB4DA6 /* UIView+LemiTravel.swift */; };
 		45461D98229CB1AB00FB4DA6 /* UILabel+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D97229CB1AB00FB4DA6 /* UILabel+LemiTravel.swift */; };
-		45461D9A229CB2A000FB4DA6 /* UIImageView+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D99229CB2A000FB4DA6 /* UIImageView+LemiTravel.swift */; };
-		45461D9C229CB38100FB4DA6 /* ConstraintMaker+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D9B229CB38100FB4DA6 /* ConstraintMaker+LemiTravel.swift */; };
+		45461D9A229CB2A000FB4DA6 /* UIImageView+DHQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D99229CB2A000FB4DA6 /* UIImageView+DHQ.swift */; };
+		45461D9C229CB38100FB4DA6 /* ConstraintMaker+DHQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D9B229CB38100FB4DA6 /* ConstraintMaker+DHQ.swift */; };
 		45461D9E229D54CF00FB4DA6 /* UIButton+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D9D229D54CF00FB4DA6 /* UIButton+LemiTravel.swift */; };
-		45461DA0229D5BB500FB4DA6 /* UIImage+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D9F229D5BB500FB4DA6 /* UIImage+LemiTravel.swift */; };
+		45461DA0229D5BB500FB4DA6 /* UIImage+DHQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461D9F229D5BB500FB4DA6 /* UIImage+DHQ.swift */; };
 		45461DA3229D5E5700FB4DA6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DA2229D5E5700FB4DA6 /* HomeViewModel.swift */; };
-		45461DA7229D5FFE00FB4DA6 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DA6229D5FFE00FB4DA6 /* CityListViewController.swift */; };
 		45461DAA229D6A4C00FB4DA6 /* HomeViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DA9229D6A4C00FB4DA6 /* HomeViewModelSpec.swift */; };
-		45461DAD229D773400FB4DA6 /* UITableViewCell+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DAC229D773400FB4DA6 /* UITableViewCell+LemiTravel.swift */; };
+		45461DAD229D773400FB4DA6 /* UITableViewCell+DHQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DAC229D773400FB4DA6 /* UITableViewCell+DHQ.swift */; };
 		45461DAF229D7A4100FB4DA6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DAE229D7A4100FB4DA6 /* City.swift */; };
 		45461DB2229D7CFD00FB4DA6 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DB1229D7CFD00FB4DA6 /* HomeTableViewCell.swift */; };
-		457FE536229E8155000D6C52 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE535229E8155000D6C52 /* CityTableViewCell.swift */; };
 		457FE538229E8A65000D6C52 /* CityListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE537229E8A65000D6C52 /* CityListViewModel.swift */; };
 		457FE53A229E8BCA000D6C52 /* LTSharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE539229E8BCA000D6C52 /* LTSharedData.swift */; };
 		457FE53C229E8F08000D6C52 /* LTDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE53B229E8F08000D6C52 /* LTDefaults.swift */; };
 		457FE53E229EAE59000D6C52 /* CityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE53D229EAE59000D6C52 /* CityHelper.swift */; };
 		457FE541229EB30B000D6C52 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE540229EB30B000D6C52 /* BaseTableViewCell.swift */; };
-		457FE543229EBBBF000D6C52 /* String+LemiTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE542229EBBBF000D6C52 /* String+LemiTravel.swift */; };
-		457FE548229EC660000D6C52 /* Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 457FE547229EC660000D6C52 /* Cities.json */; };
+		457FE543229EBBBF000D6C52 /* String+DHQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE542229EBBBF000D6C52 /* String+DHQ.swift */; };
+		457FE548229EC660000D6C52 /* Organisations.json in Resources */ = {isa = PBXBuildFile; fileRef = 457FE547229EC660000D6C52 /* Organisations.json */; };
 		457FE54B229EC6C8000D6C52 /* CoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE54A229EC6C8000D6C52 /* CoreService.swift */; };
 		457FE555229EC771000D6C52 /* JSONArrayEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE54E229EC771000D6C52 /* JSONArrayEncoding.swift */; };
 		457FE556229EC771000D6C52 /* NoBracketsEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE54F229EC771000D6C52 /* NoBracketsEncoding.swift */; };
@@ -81,25 +79,22 @@
 		45461D93229CB02200FB4DA6 /* UIColor+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+LemiTravel.swift"; sourceTree = "<group>"; };
 		45461D95229CB17F00FB4DA6 /* UIView+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LemiTravel.swift"; sourceTree = "<group>"; };
 		45461D97229CB1AB00FB4DA6 /* UILabel+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+LemiTravel.swift"; sourceTree = "<group>"; };
-		45461D99229CB2A000FB4DA6 /* UIImageView+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LemiTravel.swift"; sourceTree = "<group>"; };
-		45461D9B229CB38100FB4DA6 /* ConstraintMaker+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintMaker+LemiTravel.swift"; sourceTree = "<group>"; };
+		45461D99229CB2A000FB4DA6 /* UIImageView+DHQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DHQ.swift"; sourceTree = "<group>"; };
+		45461D9B229CB38100FB4DA6 /* ConstraintMaker+DHQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintMaker+DHQ.swift"; sourceTree = "<group>"; };
 		45461D9D229D54CF00FB4DA6 /* UIButton+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+LemiTravel.swift"; sourceTree = "<group>"; };
-		45461D9F229D5BB500FB4DA6 /* UIImage+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+LemiTravel.swift"; sourceTree = "<group>"; };
+		45461D9F229D5BB500FB4DA6 /* UIImage+DHQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+DHQ.swift"; sourceTree = "<group>"; };
 		45461DA2229D5E5700FB4DA6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		45461DA6229D5FFE00FB4DA6 /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
-		45461DA8229D6A4C00FB4DA6 /* LemiTravelTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LemiTravelTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		45461DA9229D6A4C00FB4DA6 /* HomeViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelSpec.swift; sourceTree = "<group>"; };
-		45461DAC229D773400FB4DA6 /* UITableViewCell+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+LemiTravel.swift"; sourceTree = "<group>"; };
+		45461DAC229D773400FB4DA6 /* UITableViewCell+DHQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+DHQ.swift"; sourceTree = "<group>"; };
 		45461DAE229D7A4100FB4DA6 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		45461DB1229D7CFD00FB4DA6 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		457FE535229E8155000D6C52 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		457FE537229E8A65000D6C52 /* CityListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewModel.swift; sourceTree = "<group>"; };
 		457FE539229E8BCA000D6C52 /* LTSharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTSharedData.swift; sourceTree = "<group>"; };
 		457FE53B229E8F08000D6C52 /* LTDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTDefaults.swift; sourceTree = "<group>"; };
 		457FE53D229EAE59000D6C52 /* CityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityHelper.swift; sourceTree = "<group>"; };
 		457FE540229EB30B000D6C52 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		457FE542229EBBBF000D6C52 /* String+LemiTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LemiTravel.swift"; sourceTree = "<group>"; };
-		457FE547229EC660000D6C52 /* Cities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cities.json; sourceTree = "<group>"; };
+		457FE542229EBBBF000D6C52 /* String+DHQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DHQ.swift"; sourceTree = "<group>"; };
+		457FE547229EC660000D6C52 /* Organisations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Organisations.json; sourceTree = "<group>"; };
 		457FE54A229EC6C8000D6C52 /* CoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreService.swift; sourceTree = "<group>"; };
 		457FE54E229EC771000D6C52 /* JSONArrayEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONArrayEncoding.swift; sourceTree = "<group>"; };
 		457FE54F229EC771000D6C52 /* NoBracketsEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoBracketsEncoding.swift; sourceTree = "<group>"; };
@@ -200,7 +195,6 @@
 			children = (
 				4529F5EF229C408B001AE1D7 /* Info.plist */,
 				45461DA9229D6A4C00FB4DA6 /* HomeViewModelSpec.swift */,
-				45461DA8229D6A4C00FB4DA6 /* LemiTravelTests-Bridging-Header.h */,
 			);
 			path = DoctorHQTests;
 			sourceTree = "<group>";
@@ -218,15 +212,15 @@
 			isa = PBXGroup;
 			children = (
 				45461D90229CAF1C00FB4DA6 /* ReachabilitySwift */,
-				45461D9B229CB38100FB4DA6 /* ConstraintMaker+LemiTravel.swift */,
-				457FE542229EBBBF000D6C52 /* String+LemiTravel.swift */,
+				45461D9B229CB38100FB4DA6 /* ConstraintMaker+DHQ.swift */,
+				457FE542229EBBBF000D6C52 /* String+DHQ.swift */,
 				45461D9D229D54CF00FB4DA6 /* UIButton+LemiTravel.swift */,
 				45461D93229CB02200FB4DA6 /* UIColor+LemiTravel.swift */,
 				45461D95229CB17F00FB4DA6 /* UIView+LemiTravel.swift */,
 				45461D97229CB1AB00FB4DA6 /* UILabel+LemiTravel.swift */,
-				45461D99229CB2A000FB4DA6 /* UIImageView+LemiTravel.swift */,
-				45461D9F229D5BB500FB4DA6 /* UIImage+LemiTravel.swift */,
-				45461DAC229D773400FB4DA6 /* UITableViewCell+LemiTravel.swift */,
+				45461D99229CB2A000FB4DA6 /* UIImageView+DHQ.swift */,
+				45461D9F229D5BB500FB4DA6 /* UIImage+DHQ.swift */,
+				45461DAC229D773400FB4DA6 /* UITableViewCell+DHQ.swift */,
 				457FE539229E8BCA000D6C52 /* LTSharedData.swift */,
 				457FE53B229E8F08000D6C52 /* LTDefaults.swift */,
 			);
@@ -258,7 +252,6 @@
 			children = (
 				4529F610229C4786001AE1D7 /* Base */,
 				4529F611229C478A001AE1D7 /* Home */,
-				45461DA5229D5FD200FB4DA6 /* CityList */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -276,7 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				457FE549229EC6B4000D6C52 /* Core */,
-				457FE55D229ECE4B000D6C52 /* Search */,
+				457FE55D229ECE4B000D6C52 /* Home */,
 				457FE546229EC646000D6C52 /* StubbedResponses */,
 			);
 			path = Networking;
@@ -324,27 +317,10 @@
 			path = CityList;
 			sourceTree = "<group>";
 		};
-		45461DA5229D5FD200FB4DA6 /* CityList */ = {
-			isa = PBXGroup;
-			children = (
-				457FE534229E8114000D6C52 /* Cells */,
-				45461DA6229D5FFE00FB4DA6 /* CityListViewController.swift */,
-			);
-			path = CityList;
-			sourceTree = "<group>";
-		};
 		45461DB0229D7CEC00FB4DA6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				45461DB1229D7CFD00FB4DA6 /* HomeTableViewCell.swift */,
-			);
-			name = Cells;
-			sourceTree = "<group>";
-		};
-		457FE534229E8114000D6C52 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				457FE535229E8155000D6C52 /* CityTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -360,7 +336,7 @@
 		457FE546229EC646000D6C52 /* StubbedResponses */ = {
 			isa = PBXGroup;
 			children = (
-				457FE547229EC660000D6C52 /* Cities.json */,
+				457FE547229EC660000D6C52 /* Organisations.json */,
 			);
 			path = StubbedResponses;
 			sourceTree = "<group>";
@@ -394,12 +370,12 @@
 			path = APIManagers;
 			sourceTree = "<group>";
 		};
-		457FE55D229ECE4B000D6C52 /* Search */ = {
+		457FE55D229ECE4B000D6C52 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				457FE55E229ECE57000D6C52 /* SearchService.swift */,
 			);
-			path = Search;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		C9CFD247150046D068F50B70 /* Frameworks */ = {
@@ -520,7 +496,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				457FE548229EC660000D6C52 /* Cities.json in Resources */,
+				457FE548229EC660000D6C52 /* Organisations.json in Resources */,
 				4529F60D229C4726001AE1D7 /* LaunchScreen.xib in Resources */,
 				4529F5E0229C408B001AE1D7 /* Assets.xcassets in Resources */,
 			);
@@ -631,29 +607,27 @@
 				45461D92229CAF3900FB4DA6 /* ReachabilitySwift.swift in Sources */,
 				457FE55C229ECC5B000D6C52 /* APIManager+SearchCalls.swift in Sources */,
 				4529F5D9229C408A001AE1D7 /* AppDelegate.swift in Sources */,
-				457FE536229E8155000D6C52 /* CityTableViewCell.swift in Sources */,
 				457FE557229EC771000D6C52 /* APIManager.swift in Sources */,
 				457FE538229E8A65000D6C52 /* CityListViewModel.swift in Sources */,
 				4529F60F229C4783001AE1D7 /* HomeViewController.swift in Sources */,
 				457FE555229EC771000D6C52 /* JSONArrayEncoding.swift in Sources */,
-				457FE543229EBBBF000D6C52 /* String+LemiTravel.swift in Sources */,
-				45461DA0229D5BB500FB4DA6 /* UIImage+LemiTravel.swift in Sources */,
-				45461D9A229CB2A000FB4DA6 /* UIImageView+LemiTravel.swift in Sources */,
+				457FE543229EBBBF000D6C52 /* String+DHQ.swift in Sources */,
+				45461DA0229D5BB500FB4DA6 /* UIImage+DHQ.swift in Sources */,
+				45461D9A229CB2A000FB4DA6 /* UIImageView+DHQ.swift in Sources */,
 				45461D98229CB1AB00FB4DA6 /* UILabel+LemiTravel.swift in Sources */,
 				457FE556229EC771000D6C52 /* NoBracketsEncoding.swift in Sources */,
 				45461D96229CB17F00FB4DA6 /* UIView+LemiTravel.swift in Sources */,
 				45461DA3229D5E5700FB4DA6 /* HomeViewModel.swift in Sources */,
-				45461DAD229D773400FB4DA6 /* UITableViewCell+LemiTravel.swift in Sources */,
+				45461DAD229D773400FB4DA6 /* UITableViewCell+DHQ.swift in Sources */,
 				457FE53E229EAE59000D6C52 /* CityHelper.swift in Sources */,
 				457FE53C229E8F08000D6C52 /* LTDefaults.swift in Sources */,
 				457FE54B229EC6C8000D6C52 /* CoreService.swift in Sources */,
 				457FE55A229EC771000D6C52 /* CustomServerTrustPoliceManager.swift in Sources */,
 				45461D94229CB02200FB4DA6 /* UIColor+LemiTravel.swift in Sources */,
-				45461DA7229D5FFE00FB4DA6 /* CityListViewController.swift in Sources */,
 				457FE53A229E8BCA000D6C52 /* LTSharedData.swift in Sources */,
 				457FE541229EB30B000D6C52 /* BaseTableViewCell.swift in Sources */,
 				45461DAF229D7A4100FB4DA6 /* City.swift in Sources */,
-				45461D9C229CB38100FB4DA6 /* ConstraintMaker+LemiTravel.swift in Sources */,
+				45461D9C229CB38100FB4DA6 /* ConstraintMaker+DHQ.swift in Sources */,
 				4529F613229C4799001AE1D7 /* BaseViewController.swift in Sources */,
 				457FE55F229ECE57000D6C52 /* SearchService.swift in Sources */,
 				45461DB2229D7CFD00FB4DA6 /* HomeTableViewCell.swift in Sources */,
@@ -859,16 +833,15 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RE4YFXSB23;
-				INFOPLIST_FILE = LemiTravelTests/Info.plist;
+				DEVELOPMENT_TEAM = 29WJG67KYT;
+				INFOPLIST_FILE = DoctorHQTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.LemiTravelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.DoctorHQTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LemiTravelTests/LemiTravelTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -884,16 +857,15 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RE4YFXSB23;
-				INFOPLIST_FILE = LemiTravelTests/Info.plist;
+				DEVELOPMENT_TEAM = 29WJG67KYT;
+				INFOPLIST_FILE = DoctorHQTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.LemiTravelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.DoctorHQTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LemiTravelTests/LemiTravelTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoctorHQ.app/DoctorHQ";
@@ -905,18 +877,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RE4YFXSB23;
-				INFOPLIST_FILE = LemiTravelUITests/Info.plist;
+				DEVELOPMENT_TEAM = 29WJG67KYT;
+				INFOPLIST_FILE = DoctorHQUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.LemiTravelUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.DoctorHQUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LemiTravel;
+				TEST_TARGET_NAME = DoctorHQ;
 			};
 			name = Debug;
 		};
@@ -925,18 +898,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RE4YFXSB23;
-				INFOPLIST_FILE = LemiTravelUITests/Info.plist;
+				DEVELOPMENT_TEAM = 29WJG67KYT;
+				INFOPLIST_FILE = DoctorHQUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.LemiTravelUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.DoctorHQUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LemiTravel;
+				TEST_TARGET_NAME = DoctorHQ;
 			};
 			name = Release;
 		};
