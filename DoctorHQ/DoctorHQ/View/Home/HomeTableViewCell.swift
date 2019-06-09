@@ -22,16 +22,16 @@ class HomeTableViewCell: BaseTableViewCell {
     
     // MARK: - Functions
     
-    func setupCell(_ city: City?) {
-        if let city = city {
-            self.imageView_SelectIcon.alpha = 0
-            self.label_Title.text = city.homeCellDescription
-            return
-        }
-        
-        self.label_Title.text = "Tap to select a city".localized()
-        self.imageView_SelectIcon.alpha = 1.0
-    }
+//    func setupCell(_ city: City?) {
+//        if let city = city {
+//            self.imageView_SelectIcon.alpha = 0
+//            self.label_Title.text = city.homeCellDescription
+//            return
+//        }
+//        
+//        self.label_Title.text = "Tap to select a city".localized()
+//        self.imageView_SelectIcon.alpha = 1.0
+//    }
     
     // MARK: Overrides
     

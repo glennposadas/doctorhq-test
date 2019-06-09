@@ -1,5 +1,5 @@
 //
-//  LTDefaults.swift
+//  DHQDefaults.swift
 //  DoctorHQ
 //
 //  Created by Glenn Von C. Posadas on 29/05/2019.
@@ -8,28 +8,28 @@
 
 import Foundation
 
-enum LTDefaultsKey: String {
+enum DHQDefaultsKey: String {
     case selectedCities = "defaultsSelectedCities"
 }
 
 /// The class that has multiple class functions for handling defaults.
-class LTDefaults {
+class DHQDefaults {
     
     // MARK: - Functions
     
     /// Stores token.
-    class func store<T>(_ object: T, key: LTDefaultsKey, type: T.Type) {
+    class func store<T>(_ object: T, key: DHQDefaultsKey, type: T.Type) {
         let encodedData = NSKeyedArchiver.archivedData(withRootObject: object)
         UserDefaults.standard.set(encodedData, forKey: key.rawValue)
     }
     
     /// Removes the stored token
-    class func removeDefaultsWithKey(_ key: LTDefaultsKey) {
+    class func removeDefaultsWithKey(_ key: DHQDefaultsKey) {
         UserDefaults.standard.removeObject(forKey: key.rawValue)
     }
     
     /// Returns stored token (optional) if any.
-    class func getObjectWithKey<T>(_ key: LTDefaultsKey, type: T.Type) -> T? {
+    class func getObjectWithKey<T>(_ key: DHQDefaultsKey, type: T.Type) -> T? {
         guard let savedData = UserDefaults.standard.data(forKey: key.rawValue) else {
             return nil
         }

@@ -15,10 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        // Setup the root controller
         let homeViewController = HomeViewController()
-        let navigationController = UINavigationController(rootViewController: homeViewController)
-        navigationController.isNavigationBarHidden = true
+        let navigationController = BaseNavigationController(rootViewController: homeViewController)
         
+        // Setup the window.
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()

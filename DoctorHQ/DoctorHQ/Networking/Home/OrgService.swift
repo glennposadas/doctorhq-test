@@ -1,5 +1,5 @@
 //
-//  SearchService.swift
+//  OrgService.swift
 //  DoctorHQ
 //
 //  Created by Glenn Von C. Posadas on 29/05/2019.
@@ -9,47 +9,50 @@
 import Foundation
 import Moya
 
-let searchServiceProvider = MoyaProvider<SearchService>(
+/// Provider for OrdgService.
+let orgServiceProvider = MoyaProvider<OrgService>(
     manager: moyaManager,
     plugins: [NetworkLoggerPlugin(verbose: CoreService.verbose)]
 )
 
-enum SearchService {
-    /// Search for cities
-    case search(query: String)
+/// The service for all the Organisation related calls.
+enum OrgService {
+    /// Get the nearby org.
+    case getNearestOrganisations(latitude: Double, longitude: Double, distance: Int)
 }
 
 // MARK: - TargetType Protocol Implementationm
 
-extension SearchService: TargetType {
+extension OrgService: TargetType {
     var baseURL: URL {
-        return URL(string: baseURLString)!
+        return URL(string: APIUrl.baseURLString)!
     }
     
     var path: String {
         switch self {
-        case .search: return "/cities"
+        case let .getNearestOrganisations(latitude, longitude, _):
+            return "/organizations/organisation/latlon/\(latitude)/\(longitude)"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .search: return .get
+        case .getNearestOrganisations: return .get
         }
     }
     
     var sampleData: Data {
         switch self {
-        case .search: return stubbedResponse("Cities")
+        case .getNearestOrganisations: return stubbedResponse("Organisations")
         }
     }
 
     var task: Task {
         switch self {
-        case let .search(query):
+        case let .getNearestOrganisations(_, _, distance):
             return .requestParameters(
                 parameters: [
-                    "q": query
+                    "distance": distance
                 ], encoding: URLEncoding.default
             )
         }

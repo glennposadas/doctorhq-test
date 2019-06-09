@@ -6,21 +6,14 @@
 //  Copyright © 2019 Glenn Von C. Posadas. All rights reserved.
 //
 
+import CoreLocation
 import Foundation
 import Moya
 import RxCocoa
 import RxSwift
 
-enum HomeSectionType: Int {
-    case selectCity = 0
-    case selectedCities
-    
-    static let count: Int = 2
-}
-
 /// The delegate of the ```HomeViewModel```
 protocol HomeDelegate: class {
-    func showCityList()
     func reloadData()
 }
 
@@ -32,28 +25,73 @@ class HomeViewModel: NSObject {
     
     weak var delegate: HomeDelegate?
     
-    // MARK: Functions
+    private var organisations = [Organisation]()
     
+    var currentLocation = BehaviorRelay<CLLocation?>(value: nil)
+    private lazy var locationManager: CLLocationManager = {
+        let manager = CLLocationManager()
+        manager.delegate = self
+        manager.requestWhenInUseAuthorization()
+        manager.pausesLocationUpdatesAutomatically = true
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.distanceFilter = 50
+        return manager
+    }()
+    
+    // MARK: Functions
+
     /// init
     init(homeController: HomeDelegate?) {
         super.init()
         
         self.delegate = homeController
+        self.locationManager.startUpdatingLocation()
         
-        LTSharedData.selectedCities.subscribe(onNext: { [weak self] cities in
+        self.currentLocation.subscribe(onNext: { [weak self] newLocation in
+            
             guard let strongSelf = self else { return }
-            strongSelf.delegate?.reloadData()
+            
+            APIManager.OrgCalls.getNearestOrganisations(
+                latitude: newLocation?.coordinate.latitude ?? 0.0,
+                longitude: newLocation?.coordinate.longitude ?? 0.0, onSuccess: { (organisations) in
+                    guard let organisations = organisations else { return }
+                    strongSelf.organisations = organisations
+                    strongSelf.delegate?.reloadData()
+            })
         }).disposed(by: self.disposeBag)
     }
-    
-    // MARK: Button Events
-    
-    /// Selector for select city button.
-    /// Update: button was changed to tableViewCell.
-    func selectCity() {
-        self.delegate?.showCityList()
+}
+
+// MARK: - CLLocationManagerDelegate
+
+extension HomeViewModel: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let lastLocation = locations.last else { return }
+        self.currentLocation.accept(lastLocation)
     }
     
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status {
+        case .restricted:
+            print("Location access was restricted.")
+        case .denied:
+            print("User denied access to location.")
+
+            
+        case .notDetermined:
+            print("Location status not determined.")
+        case .authorizedAlways: fallthrough
+        case .authorizedWhenInUse:
+            print("Location status is OK.")
+        @unknown default:
+            print("CLAuthorizationStatus ERROR.")
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        self.locationManager.stopUpdatingLocation()
+        print("Error: \(error)")
+    }
 }
 
 // MARK: - UITableViewDelegate
@@ -93,7 +131,7 @@ extension HomeViewModel: UITableViewDataSource {
             case .selectCity:
                 cell?.setupCell(nil)
             case .selectedCities:
-                cell?.setupCell(LTSharedData.selectedCities.value[row])
+                cell?.setupCell(DHQSharedData.selectedCities.value[row])
             }
         }
         
@@ -104,7 +142,7 @@ extension HomeViewModel: UITableViewDataSource {
         if let homeSectionType = HomeSectionType(rawValue: section) {
             switch homeSectionType {
             case .selectCity: return 1
-            case .selectedCities: return LTSharedData.selectedCities.value.count
+            case .selectedCities: return DHQSharedData.selectedCities.value.count
             }
         }
         

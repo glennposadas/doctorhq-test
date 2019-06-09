@@ -83,7 +83,7 @@ class BaseViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
 
-    
+    /// Begin layouting the internet connection top toast.
     func layoutInternetConnectionObserverToast() {
         if let keyWindow = UIApplication.shared.keyWindow {
             if keyWindow.subviews.filter({ $0.tag == 9911 }).count == 0 {
@@ -120,6 +120,7 @@ class BaseViewController: UIViewController {
         }
     }
     
+    /// Method for toggling the visibility of the top toast.
     func toggleInternetToastVisibility(toastIsHidden: Bool) {
         if let keyWindow = UIApplication.shared.keyWindow,
             let toast = keyWindow.subviews.filter({ $0.tag == 9911 }).first {
@@ -129,6 +130,7 @@ class BaseViewController: UIViewController {
         }
     }
     
+    /// Observing internet connection method.
     private func observeInternetConnection() {
         self.reachability.whenReachable = { [weak self] _ in
             print("Reachable 🌍")
@@ -172,12 +174,13 @@ class BaseViewController: UIViewController {
             self.navigationItem.largeTitleDisplayMode = .never
         }
         
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .always
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         
         // Register cells
         self.tableView.register(BaseTableViewCell.self, forCellReuseIdentifier: BaseTableViewCell.identifier)
         self.tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: HomeTableViewCell.identifier)
-        self.tableView.register(CityTableViewCell.self, forCellReuseIdentifier: CityTableViewCell.identifier)
         
         let transluscentView = UIView()
         transluscentView.backgroundColor = .clear

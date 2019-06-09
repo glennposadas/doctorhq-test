@@ -1,6 +1,6 @@
 # DoctorHQ Test iOS
 
-This project was made for DoctorHQ online assessment test.
+This project was made for DocHQ.co.uk online assessment test.
 
 
 ### Tech and Tools

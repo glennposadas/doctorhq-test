@@ -25,12 +25,17 @@ class HomeViewController: BaseViewController {
     }
     
     private func setupUI() {
-        self.view.addSubview(self.tableView)
-        self.tableView.snp.makeConstraints {
-            $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(16.0)
-            $0.leading.trailing.bottom.equalTo(self.view.safeAreaLayoutGuide)
+        self.title = "Nearby".localized()
+        
+        self.view.addSubview(self.activityIndicator)
+        self.activityIndicator.snp.makeConstraints {
+            $0.center.equalToSuperview()
         }
 
+        self.view.addSubview(self.tableView)
+        self.tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
     
     // MARK: Overrides
@@ -39,7 +44,6 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         
         self.viewModel = HomeViewModel(homeController: self)
-        
         self.setupUI()
         self.setupBindings()
     }
@@ -48,11 +52,6 @@ class HomeViewController: BaseViewController {
 // MARK: - HomeDelegate
 
 extension HomeViewController: HomeDelegate {
-    func showCityList() {
-        let cityListController = CityListViewController()
-        self.navigationController?.pushViewController(cityListController, animated: true)
-    }
-    
     func reloadData() {
         self.tableView.reloadData()
     }

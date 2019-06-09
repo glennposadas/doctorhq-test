@@ -8,15 +8,29 @@
 
 import Moya
 
-public let deviceId = UIDevice.current.identifierForVendor!.uuidString
-
-public let baseURLStringDEV = "https://lemi.travel"
-public let apiVersionDEV = "/api/v5"
-
-/// Returns the base url of the API based on the LLFEnv.
-public var baseURLString: String {
-    get {
-        return "\(baseURLStringDEV)\(apiVersionDEV)"
+/// Contains all static URL String of the whole service.
+/// Values will vary based on the DHQEnv.
+/// TODO: Setup DHQEnv (Dev, Staging, Production)
+struct APIUrl {
+    /// Complete base url of the API.
+    static var baseURLString: String {
+        get {
+            return "\(APIUrl.host)\(APIUrl.apiVersion)"
+        }
+    }
+    
+    /// The host URL String
+    static var host: String {
+        get {
+            return "https://staging.dochq.co.uk"
+        }
+    }
+    
+    /// The API version
+    static var apiVersion: String {
+        get {
+            return "/api/v2"
+        }
     }
 }
 
@@ -35,7 +49,7 @@ let moyaManager = Manager(
     serverTrustPolicyManager: CustomServerTrustPoliceManager()
 )
 
-/// The core class of LLF networking
+/// The core class of DHQ networking
 /// The constants for networking is stored in the file ```CoreService.swift```.
 class CoreService {
     
