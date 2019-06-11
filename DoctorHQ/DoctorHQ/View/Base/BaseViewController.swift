@@ -180,7 +180,7 @@ class BaseViewController: UIViewController {
         
         // Register cells
         self.tableView.register(BaseTableViewCell.self, forCellReuseIdentifier: BaseTableViewCell.identifier)
-        self.tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: HomeTableViewCell.identifier)
+        self.tableView.register(OrganisationTableViewCell.self, forCellReuseIdentifier: OrganisationTableViewCell.identifier)
         
         let transluscentView = UIView()
         transluscentView.backgroundColor = .clear

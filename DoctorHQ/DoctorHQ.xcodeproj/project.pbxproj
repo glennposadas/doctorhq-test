@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		39B6676CA5675C3E67AC68FC /* Pods_DoctorHQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52885B3711E7065FCFF2039E /* Pods_DoctorHQ.framework */; };
+		451E201122AF1FC60011736F /* OrganisationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451E201022AF1FC60011736F /* OrganisationTableViewCell.swift */; };
+		451E201422AF22A40011736F /* Organisation+DHQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451E201322AF22A40011736F /* Organisation+DHQ.swift */; };
 		4529F5D9229C408A001AE1D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529F5D8229C408A001AE1D7 /* AppDelegate.swift */; };
 		4529F5E0229C408B001AE1D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4529F5DF229C408B001AE1D7 /* Assets.xcassets */; };
 		4529F5F9229C408B001AE1D7 /* DoctorHQUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4529F5F8229C408B001AE1D7 /* DoctorHQUITests.swift */; };
@@ -24,7 +26,6 @@
 		45461DA3229D5E5700FB4DA6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DA2229D5E5700FB4DA6 /* HomeViewModel.swift */; };
 		45461DAA229D6A4C00FB4DA6 /* HomeViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DA9229D6A4C00FB4DA6 /* HomeViewModelSpec.swift */; };
 		45461DAD229D773400FB4DA6 /* UITableViewCell+DHQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DAC229D773400FB4DA6 /* UITableViewCell+DHQ.swift */; };
-		45461DB2229D7CFD00FB4DA6 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45461DB1229D7CFD00FB4DA6 /* HomeTableViewCell.swift */; };
 		457E64B222AD421D006986A8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457E64B122AD421D006986A8 /* Launch Screen.storyboard */; };
 		457E64B422AD48AF006986A8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E64B322AD48AF006986A8 /* BaseNavigationController.swift */; };
 		457FE53A229E8BCA000D6C52 /* DHQSharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FE539229E8BCA000D6C52 /* DHQSharedData.swift */; };
@@ -64,6 +65,8 @@
 
 /* Begin PBXFileReference section */
 		170D703E6D82B2FA1E4AB2CD /* Pods-DoctorHQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorHQ.debug.xcconfig"; path = "Target Support Files/Pods-DoctorHQ/Pods-DoctorHQ.debug.xcconfig"; sourceTree = "<group>"; };
+		451E201022AF1FC60011736F /* OrganisationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganisationTableViewCell.swift; sourceTree = "<group>"; };
+		451E201322AF22A40011736F /* Organisation+DHQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Organisation+DHQ.swift"; sourceTree = "<group>"; };
 		4529F5D5229C408A001AE1D7 /* DoctorHQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorHQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4529F5D8229C408A001AE1D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4529F5DF229C408B001AE1D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,7 +89,6 @@
 		45461DA2229D5E5700FB4DA6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		45461DA9229D6A4C00FB4DA6 /* HomeViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelSpec.swift; sourceTree = "<group>"; };
 		45461DAC229D773400FB4DA6 /* UITableViewCell+DHQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+DHQ.swift"; sourceTree = "<group>"; };
-		45461DB1229D7CFD00FB4DA6 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		457E64B122AD421D006986A8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		457E64B322AD48AF006986A8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		457FE539229E8BCA000D6C52 /* DHQSharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHQSharedData.swift; sourceTree = "<group>"; };
@@ -155,6 +157,14 @@
 				CD49B06FDAAAED2B4213EFC0 /* Pods-DoctorHQTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		451E201222AF225D0011736F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				451E201322AF22A40011736F /* Organisation+DHQ.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		4529F5CC229C408A001AE1D7 = {
@@ -288,6 +298,7 @@
 		4529F611229C478A001AE1D7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				457E64B522AD55B6006986A8 /* ErrorViews */,
 				45461DB0229D7CEC00FB4DA6 /* Cells */,
 				4529F60E229C4783001AE1D7 /* HomeViewController.swift */,
 			);
@@ -313,9 +324,16 @@
 		45461DB0229D7CEC00FB4DA6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				45461DB1229D7CFD00FB4DA6 /* HomeTableViewCell.swift */,
+				451E201022AF1FC60011736F /* OrganisationTableViewCell.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		457E64B522AD55B6006986A8 /* ErrorViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ErrorViews;
 			sourceTree = "<group>";
 		};
 		457FE53F229EB2F6000D6C52 /* Cells */ = {
@@ -374,6 +392,7 @@
 		4598CD9422ACA6DC00552A19 /* Organisation */ = {
 			isa = PBXGroup;
 			children = (
+				451E201222AF225D0011736F /* Extensions */,
 				4598CD9022ACA6D800552A19 /* MapLink.swift */,
 				4598CD8E22ACA6D800552A19 /* OpeningTimesHelper.swift */,
 				4598CD8F22ACA6D800552A19 /* Organisation.swift */,
@@ -620,6 +639,7 @@
 				4598CD9222ACA6D800552A19 /* Organisation.swift in Sources */,
 				457FE556229EC771000D6C52 /* NoBracketsEncoding.swift in Sources */,
 				45461D96229CB17F00FB4DA6 /* UIView+LemiTravel.swift in Sources */,
+				451E201122AF1FC60011736F /* OrganisationTableViewCell.swift in Sources */,
 				45461DA3229D5E5700FB4DA6 /* HomeViewModel.swift in Sources */,
 				45461DAD229D773400FB4DA6 /* UITableViewCell+DHQ.swift in Sources */,
 				457FE53C229E8F08000D6C52 /* DHQDefaults.swift in Sources */,
@@ -633,8 +653,8 @@
 				457FE541229EB30B000D6C52 /* BaseTableViewCell.swift in Sources */,
 				45461D9C229CB38100FB4DA6 /* ConstraintMaker+DHQ.swift in Sources */,
 				4529F613229C4799001AE1D7 /* BaseViewController.swift in Sources */,
+				451E201422AF22A40011736F /* Organisation+DHQ.swift in Sources */,
 				457FE55F229ECE57000D6C52 /* OrgService.swift in Sources */,
-				45461DB2229D7CFD00FB4DA6 /* HomeTableViewCell.swift in Sources */,
 				45461D9E229D54CF00FB4DA6 /* UIButton+LemiTravel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

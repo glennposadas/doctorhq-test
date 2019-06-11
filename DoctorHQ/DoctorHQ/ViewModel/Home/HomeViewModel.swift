@@ -8,6 +8,7 @@
 
 import CoreLocation
 import Foundation
+import MapKit
 import Moya
 import RxCocoa
 import RxSwift
@@ -38,7 +39,18 @@ class HomeViewModel: NSObject {
         return manager
     }()
     
+    private lazy var mapView: MKMapView = {
+        let mapView = MKMapView()
+        return mapView
+    }()
+    
     // MARK: Functions
+    
+    /// Let the controller show the no location views
+    /// and hide the main views.
+    private func noLocation() {
+        
+    }
 
     /// init
     init(homeController: HomeDelegate?) {
@@ -72,19 +84,8 @@ extension HomeViewModel: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
-        case .restricted:
-            print("Location access was restricted.")
-        case .denied:
-            print("User denied access to location.")
-
-            
-        case .notDetermined:
-            print("Location status not determined.")
-        case .authorizedAlways: fallthrough
-        case .authorizedWhenInUse:
-            print("Location status is OK.")
-        @unknown default:
-            print("CLAuthorizationStatus ERROR.")
+        case .authorizedAlways, .authorizedWhenInUse: break
+        default: self.noLocation()
         }
     }
     
@@ -100,14 +101,6 @@ extension HomeViewModel: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let section = indexPath.section
-        
-        if let homeSectionType = HomeSectionType(rawValue: section) {
-            switch homeSectionType {
-            case .selectCity: self.selectCity()
-            case .selectedCities: break
-            }
-        }
     }
 }
 
@@ -115,41 +108,22 @@ extension HomeViewModel: UITableViewDelegate {
 
 extension HomeViewModel: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: HomeTableViewCell?
+        var cell: OrganisationTableViewCell?
         
-        cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier, for: indexPath) as? HomeTableViewCell
+        cell = tableView.dequeueReusableCell(withIdentifier: OrganisationTableViewCell.identifier, for: indexPath) as? OrganisationTableViewCell
         
         if cell == nil {
-            cell = HomeTableViewCell()
+            cell = OrganisationTableViewCell()
         }
         
-        let section = indexPath.section
         let row = indexPath.row
         
-        if let homeSectionType = HomeSectionType(rawValue: section) {
-            switch homeSectionType {
-            case .selectCity:
-                cell?.setupCell(nil)
-            case .selectedCities:
-                cell?.setupCell(DHQSharedData.selectedCities.value[row])
-            }
-        }
-        
+        let org = self.organisations[row]
+        cell?.setupCell(org)
         return cell!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let homeSectionType = HomeSectionType(rawValue: section) {
-            switch homeSectionType {
-            case .selectCity: return 1
-            case .selectedCities: return DHQSharedData.selectedCities.value.count
-            }
-        }
-        
-        return 0
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return HomeSectionType.count
+        return self.organisations.count
     }
 }
